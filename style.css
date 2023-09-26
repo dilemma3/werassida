@@ -40,7 +40,7 @@ h1::after {
     animation: typewriter 4s steps(23) 1s forwards,
     blink 750ms steps(23) infinite;
 }
-
+/*
 article {
     opacity: 0;
     transform: translateY(7rem);
@@ -66,7 +66,7 @@ article {
         transform: translateY(0);
     }
 }
-/* Animering sluta här */
+/* Animering sluta här */  */
 
 h2 {
 }
@@ -148,17 +148,20 @@ img {
 
 @media only screen and (max-width: 414px) {
 
+    body {
+        width: 100%;
+    }
     h1 {
-        font-size: 40px;
+        font-size: 2.3em;
         text-align: center;
     }
 
     h2 {
-        font-size: 13px;
+        font-size: 1.5em;
     }
 
     h3 {
-        font-size: 11px;
+        font-size: 1em;
     }
 
     .container {
@@ -170,7 +173,7 @@ img {
     
     }
     .first, .second, .third, .fourth {
-        width: 40%;
+        width: 30%;
         flex-direction: column;
         border: 1px solid black;
         box-shadow: 5px 5px 5px 1px #777777;
@@ -185,7 +188,7 @@ img {
     }
 
     img {
-        width: 40%;
+        width: 30%;
         flex-direction: column;
         border: 1px solid black;
         box-shadow: 5px 5px 5px 1px #777777;
