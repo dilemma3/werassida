@@ -35,7 +35,7 @@ h1::before {
 }
 
 h1::after {
-    width: 0.125em;
+    width: 0.07em;
     background: black;
     animation: typewriter 4s steps(23) 1s forwards,
     blink 750ms steps(23) infinite;
