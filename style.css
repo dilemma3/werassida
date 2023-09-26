@@ -40,7 +40,7 @@ h1::after {
     animation: typewriter 4s steps(23) 1s forwards,
     blink 750ms steps(23) infinite;
 }
-/*
+
 article {
     opacity: 0;
     transform: translateY(7rem);
@@ -66,7 +66,7 @@ article {
         transform: translateY(0);
     }
 }
-/* Animering sluta här */  */
+/* Animering sluta här */ 
 
 h2 {
 }
