@@ -1,5 +1,5 @@
 body {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     justify-content: center;
     background: #f1baff;
@@ -35,13 +35,16 @@ h1::before {
 }
 
 h1::after {
-    width: 0.125em;
+    width: 0.07em;
     background: black;
     animation: typewriter 4s steps(23) 1s forwards,
     blink 750ms steps(23) infinite;
 }
 
 article {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     opacity: 0;
     transform: translateY(7rem);
     animation: fadeInUp 3s ease 5s forwards;
@@ -67,8 +70,6 @@ article {
 }
 /* Animering sluta här */ 
 
-h2 {
-}
 
 h3 {
     text-align: center;
