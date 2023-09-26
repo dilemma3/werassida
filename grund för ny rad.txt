@@ -1,0 +1,31 @@
+ <div class="container">
+            <div class="first">
+                <h2></h2>
+                <i></i><hr>
+                <p></p>
+            </div>
+
+            <div class="second">
+                <h2></h2>
+                <i></i><hr>
+                <p></p>
+            </div>
+
+            <div class="third">
+                <h2></h2>
+                <i></i><hr>
+                <p></p>
+            </div>
+
+            <div class="fourth">
+                <h2></h2>
+                <i></i><hr>
+                <p></p>
+            </div>
+        </div>
+        <div class="pic">
+            <img src="img/.jpg">
+            <img src="img/.jpg">
+            <img src="img/.jpg">
+            <img src="img/.jpg">
+        </div>

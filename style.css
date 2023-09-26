@@ -1,0 +1,194 @@
+body {
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    background: #f1baff;
+    background: linear-gradient(0deg, rgba(241,186,255,1) 0%, #f9eeff 100%);
+}
+
+h1 {
+    padding-top: 2%;
+    font-size: 3.5em;
+    text-align: center;
+    font-family: 'DEC Terminal Modern', sans-serif;
+    position: relative;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 0.8em;
+    font-weight: 400;
+}
+/* Det som animerar H1 */
+h1::before,
+h1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+h1::before {
+    background-color: #f9eeff;
+    animation: typewriter 4s steps(23) 1s forwards;
+}
+
+h1::after {
+    width: 0.125em;
+    background: black;
+    animation: typewriter 4s steps(23) 1s forwards,
+    blink 750ms steps(23) infinite;
+}
+
+article {
+    opacity: 0;
+    transform: translateY(7rem);
+    animation: fadeInUp 3s ease 5s forwards;
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes blink {
+    to {
+        background: transparent;
+    }
+}
+
+@keyframes fadeInUp {
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Animering sluta här */
+
+h2 {
+}
+
+h3 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+.month {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    text-align: center;
+    margin: 1%;
+    justify-content: center;
+}
+
+.first, .second, .third, .fourth {
+    width: 20%;
+    text-align: center;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px 1px #777777;
+    margin: 0.5em;
+    padding: 1em;
+}
+
+.first {
+    background-color: rgb(255, 223, 228);
+    border-radius: 50px 0;
+}
+
+.second {
+    background-color: rgb(255, 254, 217);
+    border-radius: 0 50px;
+}
+
+.third {
+    background-color: rgb(205, 255, 236);
+    border-radius: 50px 0;
+}
+
+.fourth {
+    background-color: rgb(210, 234, 255);
+    border-radius: 0 50px;
+}
+
+.pic {
+    display: flex;
+    text-align: center;
+    margin: 1%;
+    justify-content: center;
+    padding-bottom: 10%;
+}
+
+img {
+    width: 21%;
+    text-align: center;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px 1px #777777;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+#footer {
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 414px) {
+
+    h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 13px;
+    }
+
+    h3 {
+        font-size: 11px;
+    }
+
+    .container {
+        display: flex;
+        text-align: center;
+        margin: 1%;
+        flex-wrap: wrap;
+        
+    
+    }
+    .first, .second, .third, .fourth {
+        width: 40%;
+        flex-direction: column;
+        border: 1px solid black;
+        box-shadow: 5px 5px 5px 1px #777777;
+        padding: 0.5em;
+    }
+
+    .pic {
+        display: flex;
+        text-align: center;
+        margin: 2%;
+        flex-wrap: wrap;
+    }
+
+    img {
+        width: 40%;
+        flex-direction: column;
+        border: 1px solid black;
+        box-shadow: 5px 5px 5px 1px #777777;
+        padding: 0.5em;
+    }
+}
